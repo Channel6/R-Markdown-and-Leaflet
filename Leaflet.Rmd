@@ -1,0 +1,38 @@
+---
+title: "R Markdown and Leaflet"
+author: "Glenn Kerbein"
+date: "May 13, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Markdown & leaflet assignment
+## Instructions
+Create a web page using R Markdown that features a map created with Leaflet.
+
+## Criteria
+1. Does the web page feature a date and is this date less than two months before the date that you're grading this assignment?
+2. Does the web page feature an interactive map that appears to have been created with Leaflet?
+
+## Map
+```{r echo=TRUE}
+library(leaflet)
+
+CFCULogo <- makeIcon(
+	iconUrl = "https://www.comfirstcu.org/images/logo.gif",
+	iconWidth = 31*215/230,
+	iconHeight = 31,
+	iconAnchorX = 31*215/230/2,
+	iconAnchorY = 16
+)
+
+CFCUlocations <- data.frame(
+	lat = c(41.872693, 38.453594, 38.502237, 38.306802, 38.611669, 38.404080, 38.446126),
+	lng = c(-88.099606, -122.771138, -122.997407, -122.302803, -122.871419, -122.825748, -122.730874)
+)
+
+CFCUlocations %>% leaflet() %>% addTiles() %>% addMarkers(popup="Branch location", icon = CFCULogo)
+```
