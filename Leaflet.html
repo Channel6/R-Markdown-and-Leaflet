@@ -151,10 +151,10 @@ $(document).ready(function () {
 
 CFCULogo &lt;- makeIcon(
     iconUrl = &quot;https://www.comfirstcu.org/images/logo.gif&quot;,
-    iconWidth = 31*215/230,
-    iconHeight = 31,
-    iconAnchorX = 31*215/230/2,
-    iconAnchorY = 16
+    iconWidth = 89,
+    iconHeight = 21,
+    iconAnchorX = 89/2,
+    iconAnchorY = 11
 )
 
 CFCUlocations &lt;- data.frame(
@@ -163,8 +163,8 @@ CFCUlocations &lt;- data.frame(
 )
 
 CFCUlocations %&gt;% leaflet() %&gt;% addTiles() %&gt;% addMarkers(popup=&quot;Branch location&quot;, icon = CFCULogo)</code></pre>
-<div id="htmlwidget-646eeb5a50e6bc73fdbb" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-646eeb5a50e6bc73fdbb">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[38.453594,38.502237,38.306802,38.611669,38.40408,38.446126],[-122.771138,-122.997407,-122.302803,-122.871419,-122.825748,-122.730874],{"iconUrl":{"data":"https://www.comfirstcu.org/images/logo.gif","index":0},"iconWidth":28.9782608695652,"iconHeight":31,"iconAnchorX":14.4891304347826,"iconAnchorY":16},null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Branch location",null,null,null,null,null,null]}],"limits":{"lat":[38.306802,38.611669],"lng":[-122.997407,-122.302803]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7de5808c3e27c7bda41b" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7de5808c3e27c7bda41b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[38.453594,38.502237,38.306802,38.611669,38.40408,38.446126],[-122.771138,-122.997407,-122.302803,-122.871419,-122.825748,-122.730874],{"iconUrl":{"data":"https://www.comfirstcu.org/images/logo.gif","index":0},"iconWidth":89,"iconHeight":21,"iconAnchorX":44.5,"iconAnchorY":11},null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Branch location",null,null,null,null,null,null]}],"limits":{"lat":[38.306802,38.611669],"lng":[-122.997407,-122.302803]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 

@@ -23,10 +23,10 @@ library(leaflet)
 
 CFCULogo <- makeIcon(
 	iconUrl = "https://www.comfirstcu.org/images/logo.gif",
-	iconWidth = 31*215/230,
-	iconHeight = 31,
-	iconAnchorX = 31*215/230/2,
-	iconAnchorY = 16
+	iconWidth = 89,
+	iconHeight = 21,
+	iconAnchorX = 89/2,
+	iconAnchorY = 11
 )
 
 CFCUlocations <- data.frame(
